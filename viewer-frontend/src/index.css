@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-ink font-sans antialiased;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+/* Render the ampersand in a clean, non-decorative style regardless of
+   the surrounding serif font's swash glyph */
+.amp {
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
